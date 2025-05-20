@@ -9,6 +9,8 @@ const projectSchema = new mongoose.Schema(
     liveProjectLink: { type: String, required: true },
     technologies: { type: [String], required: true },
     projectDescription: { type: String, required: true },
+    category: { type: String },
+    featured: { type: Boolean, default: false },
   },
   { timestamps: true }
 )
